@@ -1,8 +1,11 @@
+import SignupForm from '@/components/SignupForm'
 import React from 'react'
 
 const index = () => {
   return (
-    <div>index</div>
+    <div>
+      <SignupForm/>
+    </div>
   )
 }
 

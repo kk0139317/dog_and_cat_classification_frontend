@@ -5,6 +5,8 @@ import StepSection from '@/components/StepsSection'
 import Team from '@/components/Team'
 import Testemonial from '@/components/Testemonials'
 import PredictionsTable from '@/components/PredictionTable'
+import Pricing from '@/components/Procing'
+import Contact from '@/components/Contact'
 
 const index = () => {
   return (
@@ -15,6 +17,8 @@ const index = () => {
     {/* <Integrations/> */}
     <Testemonial/>
     <Team/>
+    <Pricing/>
+    <Contact/>
     </>
   )
 }
