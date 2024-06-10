@@ -25,18 +25,7 @@ const PredictionsTable = () => {
         setSelectedPrediction(null);
     };
 
-    const [showDownload, setShowDownload] = useState(false);
-
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = `http://127.0.0.1:8000/${selectedPrediction.image}`;
-        link.download = 'prediction_image.jpg'; // Change filename as needed
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-        };
-
-        
+    
     return (
         <div className="container mx-auto mt-8 px-4">
             <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">Predictions Table</h2>
