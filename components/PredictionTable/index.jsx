@@ -27,9 +27,9 @@ const PredictionsTable = () => {
 
     
     return (
-        <div className="container mx-auto mt-8 px-4">
-            <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">Predictions Table</h2>
-            <div className="overflow-x-auto bg-white shadow-md rounded-lg">
+        <div className="container mx-auto mt-8 px-4 bg-gray-50 mb-10 pb-0 ">
+            <h2 className="text-4xl font-bold text-center mb-6  text-gray-800">Predictions Table</h2>
+            <div className="overflow-x-auto bg-white shadow-2xl rounded-lg">
                 <table className="min-w-full table-auto divide-y divide-gray-200">
                     <thead className="bg-blue-500 text-white">
                         <tr>

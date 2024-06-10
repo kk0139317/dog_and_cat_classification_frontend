@@ -83,7 +83,7 @@ export default () => {
     // Replace javascript:void(0) paths with your paths
     const navigation = [
         { title: "Features", path: "javascript:void(0)", isDrapdown: true, navs: dropdownNavs },
-        { title: "Integrations", path: "javascript:void(0)", isDrapdown: false },
+        { title: "Integrations", path: "integrations", isDrapdown: false },
         { title: "CLassify", path: "classify", isDrapdown: false },
         { title: "Predictions", path: "all_predictions", isDrapdown: false }
     ]
