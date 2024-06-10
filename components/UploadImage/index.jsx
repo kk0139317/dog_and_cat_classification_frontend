@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-
+import Link from 'next/link';
 const UploadImage = () => {
     const [image, setImage] = useState(null);
     const [showPopup, setShowPopup] = useState(false);
@@ -109,6 +109,9 @@ const UploadImage = () => {
                                         <p className="text-lg text-gray-700">
                                             This image is classified as a <span className="font-semibold text-indigo-600">{prediction.prediction}</span> with confidence <span className="font-semibold text-indigo-600">{prediction.confidence.toFixed(2)}%</span>.
                                         </p>
+                                        <Link href='/all_predictions'
+                                        className=''
+                                        > all prediction</Link>
                                     </div>
                                 ) : (
                                     <div className="text-center">

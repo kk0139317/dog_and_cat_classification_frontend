@@ -25,6 +25,18 @@ const PredictionsTable = () => {
         setSelectedPrediction(null);
     };
 
+    const [showDownload, setShowDownload] = useState(false);
+
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = `http://127.0.0.1:8000/${selectedPrediction.image}`;
+        link.download = 'prediction_image.jpg'; // Change filename as needed
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        };
+
+        
     return (
         <div className="container mx-auto mt-8 px-4">
             <h2 className="text-4xl font-bold text-center mb-6 text-gray-800">Predictions Table</h2>
@@ -81,7 +93,7 @@ const PredictionsTable = () => {
                                 <p className="font-semibold text-lg">Image Name: <span className="text-gray-700">{selectedPrediction.image_name}</span></p>
                                 <p className="font-semibold text-lg">Original Dimensions: <span className="text-gray-700">{selectedPrediction.original_height} x {selectedPrediction.original_width}</span></p>
                                 <p className="font-semibold text-lg">Model Dimensions: <span className="text-gray-700">224 x 224</span></p>
-                                <p className="font-semibold text-lg">URL: <a href={selectedPrediction.url} className="text-blue-600 hover:underline break-all">{selectedPrediction.url}</a></p>
+                                <p className="font-semibold text-lg">URL: <a href={`http://127.0.0.1:8000/${selectedPrediction.image}`} className="text-blue-600 hover:underline break-all" download >{`http://127.0.0.1:8000/${selectedPrediction.image}`}</a></p>
                             </div>
                         </div>
                     </div>
