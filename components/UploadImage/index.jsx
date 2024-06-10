@@ -98,7 +98,7 @@ const UploadImage = () => {
                             >
                                 &#10005;
                             </button>
-                            <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-center  ">
                                 <img src={image} alt="Uploaded" className="rounded-lg mb-6 border border-gray-300" style={{ maxWidth: '300px' }} />
                                 <p className="text-gray-700">Name: {imageName}</p>
                                 <p className="text-gray-700">Original Dimensions: {imageDimensions.width}px (W) x {imageDimensions.height}px (H)</p>
