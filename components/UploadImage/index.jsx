@@ -53,7 +53,7 @@ const UploadImage = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-white">
+        <div className="flex items-center justify-center ">
             <div className="bg-gray-100 rounded-lg shadow-lg p-8 w-full max-w-md">
                 <h1 className="text-4xl font-bold mb-6 text-gray-800 text-center">Cat & Dog Image Classifier</h1>
                 <div className="mb-6 text-center">
