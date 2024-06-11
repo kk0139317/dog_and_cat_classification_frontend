@@ -52,7 +52,7 @@ const PredictionsTable = () => {
                                 <td className="px-6 py-4 whitespace-nowrap">{prediction.prediction}</td>
                                 <td className="px-6 py-4 whitespace-nowrap">{prediction.confidence.toFixed(2)}%</td>
                                 <td className="px-6 py-4 whitespace-nowrap">{new Date(prediction.timestamp).toLocaleString()}</td>
-                                <td className="px-6 py-4  ">{prediction.image_name}</td>
+                                <td className="px-6 py-4 ">{prediction.image_name}</td>
                                 <td className="px-6 py-4 whitespace-nowrap">{prediction.original_height} X {prediction.original_width}</td>
                                 <td className="px-6 py-4 whitespace-nowrap">{prediction.model_height} X {prediction.model_width}</td>
                                 <td className="px-6 py-4 whitespace-nowrap"><a href="#" className="text-blue-600 hover:underline" onClick={() => openPopup(prediction)}>View</a></td>
