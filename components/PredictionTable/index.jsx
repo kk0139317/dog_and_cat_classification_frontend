@@ -27,7 +27,7 @@ const PredictionsTable = () => {
 
     
     return (
-        <div className="container mx-auto mt-8 px-4 bg-gray-50 mb-10 pb-0 ">
+        <div className="container mx-auto mt-8 px-4  mb-10 pb-0 ">
             <h2 className="text-4xl font-bold text-center mb-6  text-gray-800">Predictions Table</h2>
             <div className="overflow-x-auto bg-white shadow-2xl rounded-lg">
                 <table className="min-w-full table-auto divide-y divide-gray-200">
@@ -78,7 +78,7 @@ const PredictionsTable = () => {
                             <div className="sm:ml-6 mt-4 sm:mt-0 space-y-2">
                                 <p className="font-semibold text-lg">Prediction: <span className="text-gray-700">{selectedPrediction.prediction}</span></p>
                                 <p className="font-semibold text-lg">Confidence: <span className="text-gray-700">{selectedPrediction.confidence.toFixed(2)}%</span></p>
-                                <p className="font-semibold text-lg">Timestamp: <span className="text-gray-700">{new Date(selectedPrediction.timestamp).toLocaleString()}</span></p>
+                                <p className="font-semibold text-lg">Timestamp:  <span className="text-gray-700">{new Date(selectedPrediction.timestamp).toLocaleString()}</span></p>
                                 <p className="font-semibold text-lg">Image Name: <span className="text-gray-700">{selectedPrediction.image_name}</span></p>
                                 <p className="font-semibold text-lg">Original Dimensions: <span className="text-gray-700">{selectedPrediction.original_height} x {selectedPrediction.original_width}</span></p>
                                 <p className="font-semibold text-lg">Model Dimensions: <span className="text-gray-700">224 x 224</span></p>
